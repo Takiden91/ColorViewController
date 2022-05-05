@@ -45,7 +45,7 @@ class ViewController: UIViewController {
         setValueForLable()
         setValueForTextField()
         
-        view.backgroundColor = colorFromMainVC
+        mainView.backgroundColor = colorFromMainVC
         
     }
     
