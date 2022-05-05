@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		040F674E28240AA00063231B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040F674D28240AA00063231B /* MainViewController.swift */; };
+		040F6750282422EC0063231B /* ProtocolForSendColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040F674F282422EC0063231B /* ProtocolForSendColor.swift */; };
 		04CA473028158372003402BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CA472F28158372003402BF /* AppDelegate.swift */; };
 		04CA473228158372003402BF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CA473128158372003402BF /* SceneDelegate.swift */; };
 		04CA473428158372003402BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CA473328158372003402BF /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		040F674D28240AA00063231B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		040F674F282422EC0063231B /* ProtocolForSendColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolForSendColor.swift; sourceTree = "<group>"; };
 		04CA472C28158372003402BF /* ColorViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04CA472F28158372003402BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04CA473128158372003402BF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,7 +63,9 @@
 				04CA472F28158372003402BF /* AppDelegate.swift */,
 				04CA473128158372003402BF /* SceneDelegate.swift */,
 				04CA473328158372003402BF /* ViewController.swift */,
+				040F674D28240AA00063231B /* MainViewController.swift */,
 				04CA473528158372003402BF /* Main.storyboard */,
+				040F674F282422EC0063231B /* ProtocolForSendColor.swift */,
 				04CA473828158374003402BF /* Assets.xcassets */,
 				04CA473A28158374003402BF /* LaunchScreen.storyboard */,
 				04CA473D28158374003402BF /* Info.plist */,
@@ -140,7 +146,9 @@
 			files = (
 				04CA473428158372003402BF /* ViewController.swift in Sources */,
 				04CA473028158372003402BF /* AppDelegate.swift in Sources */,
+				040F6750282422EC0063231B /* ProtocolForSendColor.swift in Sources */,
 				04CA473228158372003402BF /* SceneDelegate.swift in Sources */,
+				040F674E28240AA00063231B /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

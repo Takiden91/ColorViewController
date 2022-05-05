@@ -9,6 +9,12 @@ import UIKit
 import Foundation
 
 class ViewController: UIViewController {
+    
+    
+    
+    var deligate: ColorDelegate?
+    var colorFromMainVC: UIColor!
+
 
     @IBOutlet weak var mainView: UIView!
     
@@ -39,7 +45,7 @@ class ViewController: UIViewController {
         setValueForLable()
         setValueForTextField()
         
-        
+        view.backgroundColor = colorFromMainVC
         
     }
     
@@ -65,14 +71,17 @@ class ViewController: UIViewController {
     
 
     
-    private func setColor() {
-        mainView.backgroundColor = UIColor(red:
+    func setColor() {
+        let newColor = UIColor(red:
                                             CGFloat(sliderFirst.value),
                                            green:
                                             CGFloat(sliderSecond.value),
                                            blue:
                                             CGFloat(sliderThird.value),
                                            alpha: 1)
+        mainView.backgroundColor = newColor
+        deligate?.setColorMainVC(newColor)
+       
     }
     
     private func setValueForLable() {
@@ -98,7 +107,8 @@ extension ViewController: UITextFieldDelegate {
     
     // Скрываем клаву по нажатию Done
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
+       textField.resignFirstResponder()
+   
         return true
     }
     // Скрытие клавиатуры по тапу за пределами Text View
@@ -146,7 +156,8 @@ extension ViewController {
                                          action: #selector(didTapeDone))
         
         
-        let flexBarButton = UIBarButtonItem(barButtonSystemItem: .flexibleSpace,
+        let flexBarButton = UIBarButtonItem(barButtonSystemItem:
+                                            .flexibleSpace,
                                             target: nil,
                                             action: nil)
         
@@ -163,6 +174,9 @@ extension ViewController {
         alert.addAction(okAction)
         present(alert, animated: true)
     }
+    
+    
+    
     
 }
 
